@@ -39,7 +39,7 @@ const ContactFormSection = () => {
   <span className="text-primary hover:opacity-60 transition">Program Overview</span>{" "}
   {/* <span className="text-primary hover:opacity-60 transition">Marketing</span>{" "}
   <span className="text-primary hover:opacity-60 transition">Course</span> */}
-  <span className="text-black">/Training Highlights</span>
+  <span className="text-black">/ Training Highlights</span>
 </h2>
             <h4 className="text-lg sm:text-sm font-semibold text-gray-600 mb-4">
               Unlock a complete career-focused training program that covers the most in-demand skills across Digital Marketing,

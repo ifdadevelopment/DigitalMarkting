@@ -1425,23 +1425,24 @@ export const aboutInfo = {
   headingTop: "New Way To Learn",
   mainHeading: "Master In Digital Marketing Course",
   subHeading:
-    "Empowering Future Careers with Industry-Leading Courses in Design, Tech & Stocks.",
+     "Theory | Live Practical | Implementation | 64+ Careers | 650+ Placement Partners",
   awardImages: [award1, award2, award3, award4],
   cards: [
     {
       title: "Our Vision — Empowering Digital Learning",
       content:
-        "Our digital marketing courses aim to help you achieve every goal in just one shot with 36+ modules. You can choose according to your need and interest. We provide 100% placement assistance with life-time support through resume-building, Q&A sessions, Google certification, and NCoEM compliance.",
+        `At Banaras Digital Solution, our mission is to build future-ready professionals through real-world digital skills. Our digital marketing course is designed with 36+ powerful modules tailored to meet industry demands. Whether you're a beginner or a professional, our flexible structure fits your pace. We offer lifetime career support, including resume assistance, interview prep, Q&A mentorship, Google certification, and NCoEM-approved learning — because your success is our commitment.`,
     },
     {
-      title: "Our Mission — Shaping Future Marketers",
+      title: "Our Mission — Shaping Future Professionals",
       content:
-        "We guide every student with the help of top trainers and industry experts to make them market-ready. Our course is driven by innovation and a future-ready vision.",
+        `We empower students with real-world skills through expert-led training and hands-on learning. Every course is crafted to align with industry standards, helping learners become confident, job-ready professionals equipped for the future.`,
     },
     {
-      title: "Our Value — Excellence, Innovation, Integrity",
+      title: "Our Values — Innovation, Excellence, Integrity",
       content:
-        "Our course is driven by innovation, excellence, and integrity. We provide customized training modules that suit every learner and work on client-like projects. We build rapport and skill that help learners succeed in practical scenarios.",
+        `We believe in empowering learners through innovative teaching, a commitment to excellence, and unwavering integrity. Our courses are designed with real-world applications in mind, combining personalized training with project-based learning. We don’t just teach — we prepare you to thrive in practical, career-driven environments.
+`,
     },
   ],
 };
