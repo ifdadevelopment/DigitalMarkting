@@ -27,7 +27,7 @@ const TestimonialSlider = () => {
         </div>
         <div className="w-full md:w-[60%] relative text-center md:text-left px-2">
           <h3 className="text-2xl md:text-3xl font-bold text-black uppercase tracking-wide mb-4">
-            What our valued clients are saying about us
+            Loved by Learners. Trusted by Professionals.
           </h3>
           <p className="text-lg font-semibold mb-2 text-primary">
             “{testimonials[currentIndex].quoteTitle}”

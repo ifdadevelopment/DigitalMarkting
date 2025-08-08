@@ -79,11 +79,23 @@ import blog3 from "/assets/digital.jpg";
 
 // OurClients data
 import Logo from "/assets/logo.png";
-
+// Feature Images
+import expert from "/assets/expert-faculty.png";
+import free from "/assets/free-demo- classes.png";
+import modern from "/assets/modern-infrastructure.png";
+import portal from "/assets/student-portal-access.png";
+import palcement from "/assets/placement-assistance.png";
+import flexible from "/assets/flexible-timings.png";
+import extra from "/assets/extra-curricular-activities.png";
+import doubt from "/assets/doubt-clearing-sessions.png";
+import certified from "/assets/certified-courses.png";
+import classrooms from "/assets/air-conditioned-classrooms.png";
+import fees from "/assets/affordable-fees.png";
+import support from "/assets/24-7-support.png";
 // HeroSection data
 import BannerHS from "/assets/Aboutbgacc.webp";
 //AboutBanner image
-import AboutBanner from "/assets/Digital5.jpeg";
+import AboutBanner from "/assets/about-us.webp";
 // AboutHeroSection data
 import sampleImage from "/assets/Aboutbgacc.webp";
 
@@ -98,44 +110,44 @@ export const testimonials = [
     image: "/assets/testimonial-a.png",
     quoteTitle: "Lounge Lizard genuinely cares about their customers.",
     quoteText:
-      "Lounge Lizard was able to take an abstract idea for an app and bring it to reality, while staying true to the original vision.",
-    author: "PRESIDENT",
-    company: "STUDR",
+      `Enrolling in the Digital Marketing course completely changed my career path. The trainers were industry experts, and the hands-on projects gave me real confidence. I landed my first job even before completing the course!`,
+    author: "Riya Sharma – Digital Marketing ",
+    company: "Student",
     rating: 5,
   },
   {
     image: "/assets/testimonial-b.png",
     quoteTitle: "Exceptional creativity and development support.",
     quoteText:
-      "The app’s design and usability were outstanding. The agency distinguished themselves with responsive communication.",
-    author: "CEO",
-    company: "CREATEX",
+      `This course gave me the practical coding experience I was missing. Live classes, real-world assignments, and placement support made it a perfect learning environment. I recently joined a startup as a junior web developer!`,
+    author: "Sneha Kapoor – Web Development",
+    company: " Student",
     rating: 5,
   },
   {
     image: "/assets/testimonial-c.png",
     quoteTitle: "Fantastic end-to-end experience with Lounge Lizard.",
     quoteText:
-      "They delivered high-quality designs with strong attention to detail and customer satisfaction.",
-    author: "MARKETING HEAD",
-    company: "TECHWAVE",
+     `The Graphic Design course was exactly what I needed. From basic tools to advanced branding projects, everything was taught practically. The mentors were supportive, and I now work as a freelance designer with international clients`,
+    author: "Aman Verma – Graphic Design ",
+    company: "Student",
     rating: 5,
   },
 ];
 
 export const cardData = [
-  { id: 1, image: DM112, text: "Artificial Intelligence" },
-  { id: 2, image: DM111, text: "Web Development" },
-  { id: 3, image: DM21, text: "UI/UX Design" },
-  { id: 4, image: DM31, text: "Digital Marketing" },
-  { id: 5, image: DM41, text: "Data Science" },
-  { id: 6, image: DM51, text: "Cyber Security" },
-  { id: 7, image: DM61, text: "App Development" },
-  { id: 8, image: DM71, text: "Cloud Computing" },
-  { id: 9, image: DM81, text: "Blockchain" },
-  { id: 10, image: DM91, text: "Robotics" },
-  { id: 11, image: DM10, text: "HR & Soft Skills" },
-  { id: 12, image: DM11, text: "Business Strategy" },
+  { id: 1, image: expert, text: "Expert Faculty" },
+  { id: 2, image: free, text: "Free Demo Classes" },
+  { id: 3, image: modern, text: "Modern Infrasture" },
+  { id: 4, image: portal, text: "Student Portal" },
+  { id: 5, image: palcement, text: "Placement Assistance" },
+  { id: 6, image: flexible, text: "Flexiable Batch" },
+  { id: 7, image: extra, text: "Extra Carcurrium" },
+  { id: 8, image: doubt, text: "Doubt Classes" },
+  { id: 9, image: certified, text: "Industry Level Certificate" },
+  { id: 10, image: classrooms, text: "Full Air Conditioner" },
+  { id: 11, image: fees, text: "Affordable Price" },
+  { id: 12, image: support, text: "27*7 Support" },
 ];
 
 export const blogData = [
@@ -1014,129 +1026,341 @@ export const features = [
   { id: 8, icon: FaHandsHelping, label: "100% Job Assistance" },
 ];
 
+// export const accordionItems = [
+//   {
+//     title: "BRANDING",
+//     faqs: [
+//       {
+//         question: "What is brand storytelling?",
+//         answer:
+//           "Brand storytelling is the art of using a narrative to connect your brand to customers, providing meaning and emotional resonance.",
+//       },
+//       {
+//         question: "Why is brand identity important?",
+//         answer:
+//           "A strong brand identity builds trust, recognition, and emotional connection with your audience, setting you apart in the market.",
+//       },
+//       {
+//         question: "Do you help with logo design?",
+//         answer:
+//           "Yes, we create custom logo designs that align with your brand's voice, values, and target audience.",
+//       },
+//       {
+//         question: "What does a branding package include?",
+//         answer:
+//           "Our branding packages typically include logo, typography, color palette, voice guidelines, and key marketing assets.",
+//       },
+//       {
+//         question: "Can you rebrand an existing business?",
+//         answer:
+//           "Absolutely! We offer brand audits, redesigns, and strategic repositioning for existing businesses ready for a refresh.",
+//       },
+//     ],
+//   },
+//   {
+//     title: "DESIGN",
+//     faqs: [
+//       {
+//         question: "What is UI/UX design?",
+//         answer:
+//           "UI/UX design is the process of creating user interfaces and experiences that are visually appealing and easy to use.",
+//       },
+//       {
+//         question: "How is responsive design implemented?",
+//         answer:
+//           "Responsive design ensures a website looks good on all devices using flexible layouts and media queries.",
+//       },
+//       {
+//         question: "What tools do you use for design?",
+//         answer:
+//           "We use Figma, Adobe XD, Sketch, and Photoshop for various design tasks.",
+//       },
+//       {
+//         question: "Do you design logos and brand kits?",
+//         answer:
+//           "Yes, we offer complete branding services including logos, style guides, and visual identity kits.",
+//       },
+//       {
+//         question: "Can I request revisions on the design?",
+//         answer:
+//           "Yes, we provide a set number of revisions to ensure you’re satisfied with the design outcome.",
+//       },
+//     ],
+//   },
+//   {
+//     title: "DIGITAL MARKETING",
+//     faqs: [
+//       {
+//         question: "What platforms do you use for digital marketing?",
+//         answer:
+//           "We use Google Ads, Facebook Ads, Instagram, LinkedIn, and various email marketing platforms.",
+//       },
+//       {
+//         question: "What is included in your SEO service?",
+//         answer:
+//           "Technical SEO, keyword optimization, backlinking, and analytics reporting are all included.",
+//       },
+//       {
+//         question: "Do you run paid ad campaigns?",
+//         answer:
+//           "Yes, we create and manage PPC campaigns on Google and social media platforms.",
+//       },
+//       {
+//         question: "How do you track campaign success?",
+//         answer:
+//           "We use tools like Google Analytics and Meta Pixel to measure KPIs and performance metrics.",
+//       },
+//       {
+//         question: "Is content marketing part of your services?",
+//         answer:
+//           "Yes, we offer blogging, content planning, and strategy to boost organic traffic.",
+//       },
+//     ],
+//   },
+//   {
+//     title: "DEVELOPMENT",
+//     faqs: [
+//       {
+//         question: "Do you build custom websites?",
+//         answer:
+//           "Yes, we specialize in custom-built websites tailored to your business needs and target audience.",
+//       },
+//       {
+//         question: "What platforms do you use for e-commerce development?",
+//         answer:
+//           "We use Shopify, WooCommerce, and custom solutions built with React, Node.js, and MongoDB.",
+//       },
+//       {
+//         question: "Is mobile responsiveness included?",
+//         answer:
+//           "Yes, all websites we develop are fully responsive across mobile, tablet, and desktop devices.",
+//       },
+//       {
+//         question: "Can I manage my own content?",
+//         answer:
+//           "Absolutely! We integrate CMS platforms like WordPress or custom CMS so you can easily manage your site content.",
+//       },
+//       {
+//         question: "Do you offer ongoing support and maintenance?",
+//         answer:
+//           "Yes, we provide maintenance packages that include updates, bug fixes, security monitoring, and performance optimization.",
+//       },
+//     ],
+//   },
+// ];
 export const accordionItems = [
   {
-    title: "BRANDING",
-    faqs: [
-      {
-        question: "What is brand storytelling?",
-        answer:
-          "Brand storytelling is the art of using a narrative to connect your brand to customers, providing meaning and emotional resonance.",
-      },
-      {
-        question: "Why is brand identity important?",
-        answer:
-          "A strong brand identity builds trust, recognition, and emotional connection with your audience, setting you apart in the market.",
-      },
-      {
-        question: "Do you help with logo design?",
-        answer:
-          "Yes, we create custom logo designs that align with your brand's voice, values, and target audience.",
-      },
-      {
-        question: "What does a branding package include?",
-        answer:
-          "Our branding packages typically include logo, typography, color palette, voice guidelines, and key marketing assets.",
-      },
-      {
-        question: "Can you rebrand an existing business?",
-        answer:
-          "Absolutely! We offer brand audits, redesigns, and strategic repositioning for existing businesses ready for a refresh.",
-      },
-    ],
-  },
-  {
-    title: "DESIGN",
-    faqs: [
-      {
-        question: "What is UI/UX design?",
-        answer:
-          "UI/UX design is the process of creating user interfaces and experiences that are visually appealing and easy to use.",
-      },
-      {
-        question: "How is responsive design implemented?",
-        answer:
-          "Responsive design ensures a website looks good on all devices using flexible layouts and media queries.",
-      },
-      {
-        question: "What tools do you use for design?",
-        answer:
-          "We use Figma, Adobe XD, Sketch, and Photoshop for various design tasks.",
-      },
-      {
-        question: "Do you design logos and brand kits?",
-        answer:
-          "Yes, we offer complete branding services including logos, style guides, and visual identity kits.",
-      },
-      {
-        question: "Can I request revisions on the design?",
-        answer:
-          "Yes, we provide a set number of revisions to ensure you’re satisfied with the design outcome.",
-      },
-    ],
-  },
-  {
-    title: "DIGITAL MARKETING",
-    faqs: [
-      {
-        question: "What platforms do you use for digital marketing?",
-        answer:
-          "We use Google Ads, Facebook Ads, Instagram, LinkedIn, and various email marketing platforms.",
-      },
-      {
-        question: "What is included in your SEO service?",
-        answer:
-          "Technical SEO, keyword optimization, backlinking, and analytics reporting are all included.",
-      },
-      {
-        question: "Do you run paid ad campaigns?",
-        answer:
-          "Yes, we create and manage PPC campaigns on Google and social media platforms.",
-      },
-      {
-        question: "How do you track campaign success?",
-        answer:
-          "We use tools like Google Analytics and Meta Pixel to measure KPIs and performance metrics.",
-      },
-      {
-        question: "Is content marketing part of your services?",
-        answer:
-          "Yes, we offer blogging, content planning, and strategy to boost organic traffic.",
-      },
-    ],
-  },
-  {
-    title: "DEVELOPMENT",
-    faqs: [
-      {
-        question: "Do you build custom websites?",
-        answer:
-          "Yes, we specialize in custom-built websites tailored to your business needs and target audience.",
-      },
-      {
-        question: "What platforms do you use for e-commerce development?",
-        answer:
-          "We use Shopify, WooCommerce, and custom solutions built with React, Node.js, and MongoDB.",
-      },
-      {
-        question: "Is mobile responsiveness included?",
-        answer:
-          "Yes, all websites we develop are fully responsive across mobile, tablet, and desktop devices.",
-      },
-      {
-        question: "Can I manage my own content?",
-        answer:
-          "Absolutely! We integrate CMS platforms like WordPress or custom CMS so you can easily manage your site content.",
-      },
-      {
-        question: "Do you offer ongoing support and maintenance?",
-        answer:
-          "Yes, we provide maintenance packages that include updates, bug fixes, security monitoring, and performance optimization.",
-      },
-    ],
-  },
-];
+  title: "STUDENTS",
+  faqs: [
+    {
+      question: "What courses are available at your institute?",
+      answer:
+        "We offer a wide range of industry-relevant courses in IT, finance, graphic design, digital marketing, and more.",
+    },
+    {
+      question: "Which course is best for my career goals?",
+      answer:
+        "Our counselors help you choose the most suitable course based on your interests, background, and career aspirations.",
+    },
+    {
+      question: "Is there any eligibility required to join a course?",
+      answer:
+        "Most courses are open to all students, though some advanced courses may require prior knowledge or qualifications.",
+    },
+    {
+      question: "What is the duration of each course?",
+      answer:
+        "Course durations vary from 1 month to 12 months depending on the program and level of expertise.",
+    },
+    {
+      question: "Are the classes online, offline, or hybrid?",
+      answer:
+        "We provide flexible learning modes — online, offline, and hybrid — to accommodate different student needs.",
+    },
+    {
+      question: "What is the fee structure? Can I pay in installments?",
+      answer:
+        "Yes, we offer easy installment options. The fee depends on the course selected. Contact us for exact pricing.",
+    },
+    {
+      question: "Do you offer demo classes before admission?",
+      answer:
+        "Yes, we offer free demo sessions so you can experience the teaching quality before enrolling.",
+    },
+    {
+      question: "Will I get a certificate after completing the course?",
+      answer:
+        "Absolutely. All students receive certificates, including global certifications for selected courses.",
+    },
+    {
+      question: "Do you provide placement support?",
+      answer:
+        "Yes, we provide placement assistance, including job interview preparation and recruiter connections.",
+    },
+    {
+      question: "Are internships included in the courses?",
+      answer:
+        "Many of our courses include integrated internships for hands-on experience in real work environments.",
+    },
+    {
+      question: "How many students are there in one batch?",
+      answer:
+        "We maintain small batch sizes (max 20 students) to ensure personalized attention for each learner.",
+    },
+    {
+      question: "Can I change my batch timing later?",
+      answer:
+        "Yes, you can request a batch change within the first few weeks of the course, based on seat availability.",
+    },
+    {
+      question: "Is there any refund policy if I discontinue the course?",
+      answer:
+        "We have a transparent refund policy. Please check our terms or talk to our support team for details.",
+    },
+    {
+      question: "Do you provide recorded sessions and study material?",
+      answer:
+        "Yes, recorded sessions, PDFs, assignments, and other learning resources are shared regularly.",
+    },
+    {
+      question: "What type of practical projects will I work on?",
+      answer:
+        "You'll work on real-world projects and assignments to build your portfolio and industry-ready skills.",
+    },
+    {
+      question: "Can I pursue multiple courses at once?",
+      answer:
+        "Yes, students can enroll in multiple courses if the timings don't clash and workload is manageable.",
+    },
+    {
+      question: "Do you help in resume building and interview preparation?",
+      answer:
+        "Yes, we guide students with resume writing, LinkedIn profile building, and mock interviews.",
+    },
+    {
+      question: "Is there any age limit to join your courses?",
+      answer:
+        "No. Our courses are open to learners of all ages — students, working professionals, or homemakers.",
+    },
+    {
+      question: "What is the class timing and weekly schedule?",
+      answer:
+        "We offer morning, afternoon, evening, and weekend batches. You can choose your preferred slot.",
+    },
+    {
+      question: "Who will be teaching the course?",
+      answer:
+        "Our faculty are experienced industry professionals with deep knowledge and teaching experience in their domains.",
+    },
+  ],
+},
+{
+  title: "AGENCY",
+  faqs: [
+    {
+      question: "What services does your agency offer?",
+      answer:
+        "We offer services including branding, website design, UI/UX design, digital marketing, SEO, and development.",
+    },
+    {
+      question: "What industries do you specialize in?",
+      answer:
+        "We work across various industries such as education, healthcare, e-commerce, tech, and more.",
+    },
+    {
+      question: "Do you work with startups as well as large companies?",
+      answer:
+        "Yes, we cater to both startups and established businesses with customized solutions.",
+    },
+    {
+      question: "How does your pricing model work?",
+      answer:
+        "Our pricing depends on project scope, complexity, and timeline. We offer fixed, hourly, and retainer-based models.",
+    },
+    {
+      question: "Can I get a custom package based on my needs?",
+      answer:
+        "Absolutely. We tailor packages to meet your specific goals, timeline, and budget.",
+    },
+    {
+      question: "Do you offer free consultations or audits?",
+      answer:
+        "Yes, we offer free initial consultations and basic audits to understand your needs and propose solutions.",
+    },
+    {
+      question: "What is your typical project turnaround time?",
+      answer:
+        "Timelines vary by project type but we provide clear delivery milestones during onboarding.",
+    },
+    {
+      question: "Do you sign NDAs for confidential projects?",
+      answer:
+        "Yes, we are happy to sign NDAs to protect your business and intellectual property.",
+    },
+    {
+      question: "Can I see your past work or case studies?",
+      answer:
+        "Yes, we have a portfolio and case studies available upon request or on our website.",
+    },
+    {
+      question: "What makes your agency different from others?",
+      answer:
+        "We focus on results, personalized service, and long-term partnerships — not just project delivery.",
+    },
+    {
+      question: "How do you measure ROI or project success?",
+      answer:
+        "We define KPIs upfront and track them using analytics, user feedback, and performance reports.",
+    },
+    {
+      question: "Will I have a dedicated point of contact?",
+      answer:
+        "Yes, every client gets a dedicated project manager to streamline communication and execution.",
+    },
+    {
+      question: "How often do we receive updates or meetings?",
+      answer:
+        "We provide weekly progress updates and can schedule meetings as frequently as needed.",
+    },
+    {
+      question: "Do you outsource any part of the project?",
+      answer:
+        "No, all work is done in-house by our experienced team unless specified otherwise.",
+    },
+    {
+      question: "Can you collaborate with our in-house team?",
+      answer:
+        "Yes, we often collaborate closely with internal teams to align workflows and goals.",
+    },
+    {
+      question: "What tools or platforms do you use?",
+      answer:
+        "We use industry-standard tools like Figma, Webflow, WordPress, Google Analytics, and more.",
+    },
+    {
+      question: "Are there any hidden costs in your quotes?",
+      answer:
+        "No, all costs are transparently mentioned in our proposals. Any add-ons are discussed in advance.",
+    },
+    {
+      question: "Do you provide post-launch support or maintenance?",
+      answer:
+        "Yes, we offer ongoing support, maintenance, and optimization plans after launch.",
+    },
+    {
+      question: "What if I need changes mid-project?",
+      answer:
+        "We accommodate changes through a structured change request process to manage timelines and budgets.",
+    },
+    {
+      question: "How do I get started with your agency?",
+      answer:
+        "Just reach out through our contact form, email, or phone. We'll schedule a free consultation.",
+    },
+  ],
+}
 
+];
 export const officeData = {
   heading: "Corporate",
   highlight: "Office",
@@ -1157,7 +1381,7 @@ export const upskillsData = [
     subtitle:
       "Make your own website | Run live marketing campaigns | Live projects | Case studies",
     description:
-      "DIDM has designed a practical oriented advanced digital marketing course that best suits from student to a marketing specialist. While learning, get exposure to website designing without coding, live projects, and case studies to enhance your skills.",
+      "Gain in-depth expertise and move beyond the basics with our advanced modules designed to elevate your understanding. Whether you're aiming for higher roles or deeper insights, our program equips you with industry-level strategies, tools, and practical know-how.",
   },
   {
     id: 2,
@@ -1166,7 +1390,7 @@ export const upskillsData = [
     subtitle:
       "Online and Offline Training | Flexible Batch Timings | Weekday and Weekend Batch | Micro Batch Size",
     description:
-      "DIDM is committed to deliver the best digital marketing course learning outcomes with the facility of online/offline training and the option of choosing flexible batch timings by just dialing a number to our 24x7 customer support.",
+      "Experience learning that meets the highest standards. Our programs are designed to provide real-world skills, not just theory. With expert mentors, practical assignments, and updated curriculum, we ensure you get industry-relevant, job-ready training that sets you apart.",
   },
   {
     id: 3,
@@ -1175,7 +1399,7 @@ export const upskillsData = [
     subtitle:
       "Practical classNamees | E-resources | E-Learning | LMS learning | Assessments | Deep Learning Experience",
     description:
-      "Being a professional training institute, DIDM believes in high-quality practical training as per market standard. We provide online training sessions through LMS and provide study materials in video and text format so that students can refer to the videos even if they miss any className.",
+      "Step into a new era of learning with our Smart Classes – where education meets innovation. We combine modern technology, interactive tools, and real-time collaboration to create a dynamic, engaging, and result-oriented classroom experience.",
   },
   {
     id: 4,
@@ -1184,7 +1408,7 @@ export const upskillsData = [
     subtitle:
       "Industry Expert | Google Certified Trainers | Top Mentors | Experienced Faculty",
     description:
-      "Our trainers are qualified Google certified industry experts who adopt an interactive approach during training and focus on every individual to make them industry-ready by clearing the concepts and doubts. They also help trainees in resume building and job placements.",
+      "Become a Certified Expert in your field with our industry-recognized training programs. Our certifications validate your skills, boost your credibility, and give you a competitive edge in the job market.",
   },
 ];
 
@@ -1201,7 +1425,7 @@ export const aboutInfo = {
   headingTop: "New Way To Learn",
   mainHeading: "Master In Digital Marketing Course",
   subHeading:
-    "Theory | Live Practical | Implementation | 64+ Careers | 650+ Placement Partners",
+    "Empowering Future Careers with Industry-Leading Courses in Design, Tech & Stocks.",
   awardImages: [award1, award2, award3, award4],
   cards: [
     {
@@ -1316,11 +1540,12 @@ export const featureStats = [
 ];
 
 export const courseOptions = [
-  "Digital Marketing",
-  "Web Development",
   "Graphic Design",
-  "UI/UX Design",
-  "Animation & Multimedia",
+  "Web Design",
+  "Web Development",
+  "Basic Stock Market",
+  "Professional Stock Market",
+  "Digital Marketing",
   "Others",
 ];
 
@@ -1388,30 +1613,30 @@ export const images12 = [img1, img2, img3, img4];
 
 export const almunies = [
   {
-    name: "Anuj Sangal",
-    title: "Youtuber",
-    company: "Anuj classNamees",
+    name: "Priya Sharma",
+    // title: "Youtuber",
+    // company: "Anuj classNamees",
     message:
-      "Excellent institute for Digital Marketing and it has helped me to get my dream job and given me wings to fly. The Faculty members are very experienced and with the help of their best practices, we have gained a lot of practical knowledge.",
-    image: img1,
+      "I joined the Digital Marketing course at Banaras Digital Solution with zero experience. Within weeks, I was learning SEO, Google Ads, and social media marketing through real-time projects. The trainers were super helpful and explained everything in a way that was easy to understand. After completing the course, I landed an internship and now handle paid campaigns for clients. It completely changed my career path!",
+    // image: img1,
     color: "text-red-600",
   },
   {
     name: "Nidhi Seth",
-    title: "Graphic Designer",
-    company: "ET Creatives",
+    // title: "Graphic Designer",
+    // company: "ET Creatives",
     message:
-      "I recommend DG Royals institute for Graphic Designing. I had a great experience studying with them and if they say they mean it, they really have an internship program along with a course & excellent placement program for all the trainees.",
-    image: img2,
+      "The Graphic Designing course at Banaras Digital Solution  was exactly what I was looking for. From learning Photoshop and Illustrator to creating real brand logos and social media creatives, everything was practical. The mentors gave individual feedback which really helped me improve. I now work as a freelance designer and have a steady flow of clients. I highly recommend this course to any creative beginner.",
+    // image: img2,
     color: "text-pink-600",
   },
   {
     name: "Rahul Sharma",
-    title: "Graphic Designer",
-    company: "Periscope",
+    // title: "Graphic Designer",
+    // company: "Periscope",
     message:
-      "I did a master's in Graphic Designing from DG Royals and I am so delighted to choose this institute since it has turned my dream into reality. Now I have an excellent knowledge of Industrial Brand designs, advertising & Illustrations.",
-    image: img3,
+      "I always wanted to understand how the stock market works but never found the right guidance — until I joined the Basic Stock Market course at Banaras Digital Solution. The trainer made complex concepts very easy to understand, from chart reading to basic trading strategies. Now I confidently invest on my own and even help friends get started. It’s the best course for beginners!",
+    // image: img3,
     color: "text-red-500",
   },
 ];

@@ -15,11 +15,11 @@ import FormControl from "../components/FormControl";
 const CourseTabs = ({
   heading = (
     <>
-      Choose the Course that{" "}
-      <span className="text-primary">Interests you the Most</span>
+     Pick the Course {" "}
+      <span className="text-primary">That Sparks Your Passion.</span>
     </>
   ),
-  paragraph = `Choose the right path tailored to your learning journey or team needs. Whether you're a student or a business, our programs are crafted to boost your growth with practical skills.`,
+  paragraph = `Choose the right path tailored to your learning journey or team’s goals. Whether you're a student or a business, our programs are designed to accelerate growth through hands-on, practical skills.`,
   maxCount = 3,
   label = "",
 }) => {
@@ -273,16 +273,16 @@ const visibleCourses = filteredCourses.slice(0, visibleCount);
             <div className="p-6 sm:p-8 text-center">
               <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-4">
                 <a
-                  href="tel:+918800505151"
+                  href="tel:+919161276060"
                   className="flex items-center justify-center gap-2 bg-white text-primary px-4 py-2 rounded font-semibold text-sm hover:bg-gray-200 w-full sm:w-auto"
                 >
-                  <FiPhoneCall /> +91-8800505151
+                  <FiPhoneCall /> +91 9161276060
                 </a>
                 <a
-                  href="mailto:info@didm.in"
+                  href="mailto:info@banarasdigitalsolution.com"
                   className="flex items-center justify-center gap-2 bg-white text-primary px-4 py-2 rounded font-semibold text-sm hover:bg-gray-200 w-full sm:w-auto"
                 >
-                  <MdEmail /> info@didm.in
+                  <MdEmail /> info@banarasdigitalsolution.com
                 </a>
               </div>
             </div>

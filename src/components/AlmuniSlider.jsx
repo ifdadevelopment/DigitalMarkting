@@ -41,11 +41,11 @@ const AlmuniSlider = () => {
                 className="w-full px-4 md:w-1/3 flex-shrink-0 flex justify-center"
               >
                 <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-sm">
-                  <img
+                  {/* <img
                     src={almuni.image}
                     alt={almuni.name}
                     className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
-                  />
+                  /> */}
                   <p className="text-[#444444] mb-4 font-nunito leading-relaxed">
                     {almuni.message}
                   </p>
@@ -54,7 +54,7 @@ const AlmuniSlider = () => {
                   </h4>
                   <p className="text-[#444444] font-nunito">
                     {almuni.title},{" "}
-                    <span className="font-bold">{almuni.company}</span>
+                    {/* <span className="font-bold">{almuni.company}</span> */}
                   </p>
                 </div>
               </div>

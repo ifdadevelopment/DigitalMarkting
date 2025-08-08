@@ -4,23 +4,27 @@ import Logo from "/assets/logo2.png"
 import FormControl from "./FormControl";
 const contactPoints = [
   {
-    text: `Enroll in our <span class='text-primary hover:text-primary/60 transition'>digital marketing course curriculum</span> and learn through our LMS with dedicated mentorship and expert career guidance.`,
+    text: `100% Practical & Job-Oriented Training`,
     isHTML: true,
   },
   {
-    text: `In-depth practical digital marketing training sessions will make you job-ready with an excellent  <span class='text-gray-950 font-bold hover:text-gray-600/60 transition'>salary package.</span>`,
+    text: ` Expert Trainers with Industry Experience`,
     isHTML: true,
   },
   {
-    text: `Taking up our digital marketing course with <span class='text-gray-950 font-bold hover:text-gray-600/60 transition'>50+</span> Modules can help working professionals to have an edge over the competition.`,
+    text: `Online & Offline Learning Modes`,
     isHTML: true,
   },
   {
-    text: `Taking up our digital marketing course with <span class='text-gray-950 font-bold hover:text-gray-600/60 transition'>50+</span> Modules can help working professionals to have an edge over the competition.`,
+    text: `Certifications for Each Course`,
     isHTML: true,
   },
   {
-    text: `Taking up our digital marketing course with <span class='text-gray-950 font-bold hover:text-gray-600/60 transition'>50+</span> Modules can help working professionals to have an edge over the competition.`,
+    text: `Real Tools, Projects, and Live Assignments`,
+    isHTML: true,
+  },
+  {
+    text: `Career & Freelancing Guidance + Placement Support`,
     isHTML: true,
   },
 ];
@@ -32,16 +36,16 @@ const ContactFormSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-12 items-start">
           <div className="w-full">
              <h2 className="text-[24px] sm:text-[28px] md:text-[30px] font-semibold mb-4">
-  <span className="text-primary hover:opacity-60 transition">Digital</span>{" "}
-  <span className="text-primary hover:opacity-60 transition">Marketing</span>{" "}
-  <span className="text-primary hover:opacity-60 transition">Course</span>
+  <span className="text-primary hover:opacity-60 transition">Program Overview</span>{" "}
+  {/* <span className="text-primary hover:opacity-60 transition">Marketing</span>{" "}
+  <span className="text-primary hover:opacity-60 transition">Course</span> */}
   <span className="text-black">/Training Highlights</span>
 </h2>
             <h4 className="text-lg sm:text-sm font-semibold text-gray-600 mb-4">
-              Master in Digital Marketing Course | Online & Offline Mode
+              Unlock a complete career-focused training program that covers the most in-demand skills across Digital Marketing,
             </h4>
             <p className=" text-sm text-gray-600 mb-6">
-             We are prime and the best institute for a digital marketing course in Delhi/NCR & across India. This course makes you capable of grabbing a good package as a fresher. Furthermore, it will enhance your skill if you are a working professional and also provide you with ample opportunities to work as a freelancer after completion of the digital marketing course.
+              Web & Graphic Design, Financial Markets, and Accounting. Designed for students, job seekers, working professionals, entrepreneurs, and freelancers, this program gives you the flexibility to learn what matters most — practically and professionally.
             </p>
              <h4 className="text-lg sm:text-sm font-semibold text-gray-600 mb-4">
               Features Of The Course

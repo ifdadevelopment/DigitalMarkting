@@ -59,8 +59,7 @@ const ImpactSection = () => {
         <div>
           <TypingHeading text="We Build Web Experiences That Deliver Results" speed={100} />
           <p className="text-lg text-gray-300 mb-6">
-            Trusted by businesses worldwide, we blend creativity and strategy to
-            create high-performance websites that convert.
+           We craft custom websites that don’t just look great—but perform. Trusted by 500+ clients, we specialize in building high-converting websites that fuel business success.
           </p>
           <button className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition">
             Start Your Project

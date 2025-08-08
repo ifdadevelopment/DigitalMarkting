@@ -15,8 +15,8 @@ const About = () => {
     <>
    <BannerAll
         image={bannerContent.image}
-        heading={bannerContent.heading}
-        paragraph={bannerContent.paragraph}
+        // heading={bannerContent.heading}
+        // paragraph={bannerContent.paragraph}
       />
     <AboutInfo />
      <ImpactSection />

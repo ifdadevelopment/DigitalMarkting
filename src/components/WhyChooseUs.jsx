@@ -3,9 +3,9 @@ import { features12, images12 } from "../../data";
 
 const whyChooseData = {
   heading: "Why Students Choose",
-  highlight: "DG Royals?",
+  highlight: "Banaras Digital Solution?",
   paragraph:
-    "Thousands of students making Right Choice by joining Professional Courses For Highly Rewarding Career",
+    "Thousands of students trust Banaras Digital Solution to build skills and achieve success in the digital world. We offer industry-relevant courses with expert guidance and real-time experience.",
 };
 
 const WhyChooseUs = () => {

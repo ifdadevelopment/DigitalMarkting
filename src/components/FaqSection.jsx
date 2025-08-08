@@ -1,7 +1,7 @@
 import React from "react";
 import FaqItem from "./FaqItem";
 const FAQSection = ({
- heading = "Digital Marketing Services",
+ heading = "All About Our Courses",
 faqTitle = `FAQs about our ${heading}`,
  faqs = [],
 }) => {

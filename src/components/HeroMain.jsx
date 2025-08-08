@@ -12,13 +12,12 @@ const HeroMain = () => {
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mt-3 font-opens text-gray-900">
           AI Based{" "}
-          <span className="text-primary">Digital Marketing Course</span> <br />
+          <span className="text-primary">Professional Courses</span> <br />
           in Varanasi <span className="text-primary">With Placements</span>
         </h1>
 
         <p className="text-gray-600 mt-4 max-w-md text-base">
-          Enroll for Game Changer AI superpower. Master digital marketing
-          Course with leading Marketing Institute.
+         We Provide courses - Graphic Design | Web Design | Web Development | Basic Stock Market | Professional Stock Market | Digital Marketing
         </p>
         <div className="flex items-center justify-center lg:justify-start gap-2 mt-4 text-sm">
           <span className="text-primary font-semibold">Google</span>
@@ -38,7 +37,7 @@ const HeroMain = () => {
         <img
           src={studentIcon1}
           alt="Hero"
-          className="w-full h-auto object-cover"
+          className="w-full h- object-cover"
         />
       </div>
     </section>
