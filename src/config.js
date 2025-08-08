@@ -7,7 +7,7 @@ export const BACKEND_URL = isProduction
   ? (import.meta.env.VITE_APP_BACKEND_PROD?.replace(/\/+$/, "") + "/api")
   : (import.meta.env.VITE_APP_BACKEND_DEV?.replace(/\/+$/, "") + "/api") ||
     "http://localhost:5000/api";
-
+console.log()
 export const FRONTEND_URL = isProduction
   ? import.meta.env.VITE_APP_FRONTEND_PROD
   : import.meta.env.VITE_APP_FRONTEND_DEV;
