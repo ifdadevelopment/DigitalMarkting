@@ -24,8 +24,6 @@ const ContactDetail = () => {
             </h4>
             <p className="text-sm font-nunito font-light text-[#444444]">
               +91 9161276060<br />
-              +91-8447726000<br />
-              +91-8585959688
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">
@@ -35,7 +33,6 @@ const ContactDetail = () => {
             </h4>
             <p className="text-sm font-nunito font-light text-[#444444] break-words">
               info@banarasdigitalsolution.com<br />
-              hrdgroyals@gmail.com
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">
@@ -46,7 +43,7 @@ const ContactDetail = () => {
             <p className="text-sm font-nunito font-light text-[#444444]">
               Monday–Sunday:<br />
               10am–7pm<br />
-              <span className="font-semibold">Friday : Fix OFF</span>
+              {/* <span className="font-semibold">Friday : Fix OFF</span> */}
             </p>
           </div>
         </div>

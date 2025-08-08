@@ -68,7 +68,7 @@ const ContactFormSection = () => {
               />
               <h4 className="text-xl sm:text-2xl font-bold">Take a free session today!!</h4>
               <p className="text-sm text-red-100">
-                Go Digital | Go Global<br/>Speak To Our Specialist - +91 - 8800505151
+                Go Digital | Go Global<br/>Speak To Our Specialist - +91 9161276060
               </p>
             </div>
 <FormControl />

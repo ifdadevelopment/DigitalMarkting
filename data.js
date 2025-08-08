@@ -60,18 +60,18 @@ import DM2 from "/assets/1dm.png";
 import DM3 from "/assets/1dm.png";
 import DM4 from "/assets/1dm.png";
 import DM5 from "/assets/1dm.png";
-import expert from "/assets/expert-faculty.png";
-import free from "/assets/free-demo- classes.png";
-import modern from "/assets/modern-infrastructure.png";
-import portal from "/assets/student-portal-access.png";
-import palcement from "/assets/placement-assistance.png";
-import flexible from "/assets/flexible-timings.png";
-import extra from "/assets/extra-curricular-activities.png";
-import doubt from "/assets/doubt-clearing-sessions.png";
-import certified from "/assets/certified-courses.png";
-import classrooms from "/assets/air-conditioned-classrooms.png";
-import fees from "/assets/affordable-fees.png";
-import support from "/assets/24-7-support.png";
+import DM112 from "/assets/artificial-intellegence.png";
+import DM111 from "/assets/datascience.png";
+import DM21 from "/assets/blockchain.png";
+import DM31 from "/assets/webdevelopment.png";
+import DM41 from "/assets/cybersecurity.png";
+import DM51 from "/assets/robotics.png";
+import DM61 from "/assets/uiuxdesign.png";
+import DM71 from "/assets/app-development.png";
+import DM81 from "/assets/htsoftskills.png";
+import DM91 from "/assets/digitalmarketing.png";
+import DM10 from "/assets/cloudcomputing.png";
+import DM11 from "/assets/businessstrategy.png";
 // BlogSection data
 import blog1 from "/assets/web.jpg";
 import blog2 from "/assets/design.jpg";
@@ -124,18 +124,18 @@ export const testimonials = [
 ];
 
 export const cardData = [
-  { id: 1, image: expert, text: "Expert Faculty" },
-  { id: 2, image: free, text: "Free Demo Classes" },
-  { id: 3, image: modern, text: "Modern Infrasture" },
-  { id: 4, image: portal, text: "Student Portal" },
-  { id: 5, image: palcement, text: "Placement Assistance" },
-  { id: 6, image: flexible, text: "Flexiable Batch" },
-  { id: 7, image: extra, text: "Extra Carcurrium" },
-  { id: 8, image: doubt, text: "Doubt Classes" },
-  { id: 9, image: certified, text: "Industry Level Certificate" },
-  { id: 10, image: classrooms, text: "Full Air Conditioner" },
-  { id: 11, image: fees, text: "Affordable Price" },
-  { id: 12, image: support, text: "27*7 Support" },
+  { id: 1, image: DM112, text: "Artificial Intelligence" },
+  { id: 2, image: DM111, text: "Web Development" },
+  { id: 3, image: DM21, text: "UI/UX Design" },
+  { id: 4, image: DM31, text: "Digital Marketing" },
+  { id: 5, image: DM41, text: "Data Science" },
+  { id: 6, image: DM51, text: "Cyber Security" },
+  { id: 7, image: DM61, text: "App Development" },
+  { id: 8, image: DM71, text: "Cloud Computing" },
+  { id: 9, image: DM81, text: "Blockchain" },
+  { id: 10, image: DM91, text: "Robotics" },
+  { id: 11, image: DM10, text: "HR & Soft Skills" },
+  { id: 12, image: DM11, text: "Business Strategy" },
 ];
 
 export const blogData = [
@@ -1190,10 +1190,11 @@ export const upskillsData = [
 
 export const contactBannerData = {
   title: "Contact Us",
-  description: `Digital Vidya is a brand name of the Company “Engaging Ideas Private Limited”, 
-which was registered with the Registrar of Companies in the year 2012 and having CIN U74900DL2012PTC232239. 
-The registered office address of the Company is at C-7/6, Mianwali Nagar, Rohtak Road, New Delhi-110087 
-and the corporate office address at Unit No. 304, 3rd Floor, JMD Regent Plaza, MG Road, Gurugram, Haryana-122001.`,
+  description: `At Banaras Digital Solution, we’re committed to empowering students and professionals with practical skills that shape successful careers. Whether you're passionate about design, development, or the financial markets, our expert-led courses are designed to guide you every step of the way.
+
+Have questions about our programs? Need help selecting the right course for your goals? We’re here to help!
+Feel free to reach out to us for inquiries about:
+📞 Our team is just a message away – whether it's through call, WhatsApp, or email. We’re happy to assist you with course details, admissions, class timings, fees, or any other queries you might have.`,
 };
 
 export const aboutInfo = {
@@ -2678,7 +2679,6 @@ export const testQuestions = [
     correctAnswers: ["Linux", "Windows", "macOS"],
   },
 ];
-
 
 
 
