@@ -30,7 +30,7 @@ const CourseTabs = ({
   const status = useSelector(selectCourseStatus);
   const formSubmitStatus = useSelector((state) => state.form.formSubmitStatus);
   const formSubmitError = useSelector((state) => state.form.formSubmitError);
-  const [userType, setUserType] = useState("Student");
+  const [userType, setUserType] = useState("Courses");
   const [visibleCount, setVisibleCount] = useState(3);
   const [popupForm, setPopupForm] = useState({ open: false, course: null });
   const [enquirePopup, setEnquirePopup] = useState({
@@ -38,7 +38,7 @@ const CourseTabs = ({
     course: null,
   });
 
-  const initialCount = label?.toLowerCase().includes("enroll now")
+  const initialCount = label?.toLowerCase().includes("View More")
     ? 3
     : location.pathname === "/services"
     ? 6
@@ -84,7 +84,7 @@ const visibleCourses = filteredCourses.slice(0, visibleCount);
 
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-center mb-6 gap-4">
-          {["Student", "Business"].map((type) => (
+          {["Courses", "Services"].map((type) => (
             <button
               key={type}
               onClick={() => {
@@ -106,7 +106,7 @@ const visibleCourses = filteredCourses.slice(0, visibleCount);
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {visibleCourses.length > 0 ? (
             visibleCourses.map((course, idx) =>
-              userType === "Business" ? (
+              userType === "Services" ? (
                 <div
                   key={idx}
                   className="bg-white border shadow-md rounded transform hover:-translate-y-2.5 hover:shadow-xl transition"
@@ -276,7 +276,7 @@ const visibleCourses = filteredCourses.slice(0, visibleCount);
                   href="tel:+919161276060"
                   className="flex items-center justify-center gap-2 bg-white text-primary px-4 py-2 rounded font-semibold text-sm hover:bg-gray-200 w-full sm:w-auto"
                 >
-                  <FiPhoneCall /> +91 9161276060
+                  <FiPhoneCall /> +919161276060
                 </a>
                 <a
                   href="mailto:info@banarasdigitalsolution.com"

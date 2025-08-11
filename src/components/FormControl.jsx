@@ -203,7 +203,7 @@ const FormControl = ({ courseTitle = "" }) => {
           <label htmlFor="policy" className="text-sm">
             I agree to the{" "}
             <a href="#" className="underline">
-              DIDM Terms of Use
+              BDS Terms of Use
             </a>{" "}
             and{" "}
             <a href="#" className="underline">

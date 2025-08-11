@@ -36,11 +36,11 @@ import award2 from "/assets/award1.webp";
 import award3 from "/assets/award1.webp";
 import award4 from "/assets/award1.webp";
 // certificate image
-import Cert1 from "/assets/certificate1.jpg";
-import Cert2 from "/assets/certificate2.jpg";
-import Cert3 from "/assets/certificate3.jpg";
-import Cert4 from "/assets/certificate3.jpg";
-import Cert5 from "/assets/certificate3.jpg";
+import Cert1 from "/assets/digital-marketing.png";
+import Cert2 from "/assets/internship.png";
+import Cert3 from "/assets/nsdc.png";
+// import Cert4 from "/assets/certificate3.jpg";
+// import Cert5 from "/assets/certificate3.jpg";
 //company logo
 import Google from "/assets/google.jpg";
 import Walmart from "/assets/walmart.jpg";
@@ -1479,17 +1479,17 @@ export const certificates = [
   {
     id: 1,
     name: "Digital Marketing Certificate",
-    image: "/assets/digital-marketing.png",
+    image: Cert1,
   },
   {
     id: 2,
     name: "Internship Certificate",
-    image: "/assets/internship.png",
+    image: Cert2,
   },
   {
     id: 3,
     name: "NSDC Certificate",
-    image: "/assets/nsdc.png",
+    image: Cert3,
   },
 ];
 export const topCompanies = [
@@ -1502,7 +1502,7 @@ export const topCompanies = [
   { id: 7, name: "Company 7", logo: "/assets/company logos/seven.png" },
   { id: 8, name: "Company 8", logo: "/assets/company logos/eight.png" },
   { id: 9, name: "Company 9", logo: "/assets/company logos/nine.png" },
-  // { id: 10, name: "Company 10", logo: "/assets/company logos/ten.png" },
+  { id: 10, name: "Company 10", logo: "/assets/company logos/ten.png" },
   // { id: 11, name: "Company 11", logo: "/assets/company logos/eleven.png" },
   // { id: 12, name: "Company 12", logo: "/assets/company logos/tweleve.png" },
   // { id: 13, name: "Company 13", logo: "/assets/company logos/thirteen.png" },
@@ -1514,28 +1514,28 @@ export const featureStats = [
     id: 1,
     icon: FaUserGraduate,
     label: "STUDENTS",
-    value: 9450,
+    value: 1000,
     suffix: "+",
   },
   {
     id: 2,
     icon: FaSearch,
     label: "HIRING PARTNERS",
-    value: 300,
+    value: 50,
     suffix: "+",
   },
   {
     id: 3,
     icon: FaHandHoldingUsd,
     label: "NO COST EMI",
-    value: 5000,
+    value: 0,
     prefix: "₹",
   },
   {
     id: 4,
     icon: FaLightbulb,
-    label: "BRANDS CASE STUDIES",
-    value: 50,
+    label: "COURSES",
+    value: 10,
     suffix: "+",
   },
 ];

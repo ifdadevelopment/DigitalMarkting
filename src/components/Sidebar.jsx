@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { submitForm } from "../store/formSlice";
-import { handleSendOtp, handleVerifyOtp } from "../utils/otpUtils";
+import { BlogEnquiryForm } from "./BlogEnquiryForm";
 
 const Sidebar = ({
   latestPosts = [],
@@ -12,78 +10,10 @@ const Sidebar = ({
   showForm = true,
 }) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-
-  const isLoggedIn = useSelector((state) => state.auth?.isLoggedIn);
-  const user = useSelector((state) => state.auth?.user);
-
-  const { formSubmitStatus, formSubmitError } = useSelector((state) => state.form);
-
-  const [formData, setFormData] = useState({
-    name: user?.name || "",
-    phone: "",
-    course: "",
-    email: user?.email || "",
-    message: "",
-    formHeading: "Blog Enquiry",
-  });
-
-  const [otpSent, setOtpSent] = useState(false);
-  const [otpVerified, setOtpVerified] = useState(false);
-  const [otpLoading, setOtpLoading] = useState(false);
-  const [otpCode, setOtpCode] = useState("");
-  const [successMessageShown, setSuccessMessageShown] = useState(false);
 
   const displayedPosts = [...latestPosts]
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, maxNumber);
-
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleOtpSendClick = async () => {
-    setOtpLoading(true);
-    const result = await handleSendOtp(formData.phone);
-    setOtpSent(result?.success);
-    setOtpLoading(false);
-  };
-
-  const handleOtpVerifyClick = async () => {
-    setOtpLoading(true);
-    const result = await handleVerifyOtp(formData.phone, otpCode);
-    setOtpVerified(result?.verified);
-    setOtpLoading(false);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!isLoggedIn && (!otpVerified || !otpSent)) {
-      alert("Please verify your phone number via OTP before submitting.");
-      return;
-    }
-
-    dispatch(submitForm(formData));
-  };
-
-  useEffect(() => {
-    if (formSubmitStatus === "succeeded") {
-      setSuccessMessageShown(true);
-      setFormData((prev) => ({
-        ...prev,
-        phone: "",
-        course: "",
-        message: "",
-      }));
-      setOtpCode("");
-      setOtpSent(false);
-      setOtpVerified(false);
-    }
-  }, [formSubmitStatus]);
 
   return (
     <aside className="space-y-10 sticky top-20 h-fit">
@@ -113,110 +43,7 @@ const Sidebar = ({
         <h4 className="text-lg font-semibold mb-2">{bannerTitle}</h4>
         <p className="text-sm">{bannerDesc}</p>
       </div>
-
-      {showForm && (
-        <div className="bg-white p-6 rounded-lg shadow border">
-          <h4 className="text-lg font-semibold mb-4 text-primary">Get in Touch</h4>
-          <form className="space-y-3" onSubmit={handleSubmit}>
-            {!isLoggedIn && (
-              <>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full p-2 border rounded focus:outline-none"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full p-2 border rounded focus:outline-none"
-                  required
-                />
-                <div className="flex gap-2">
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone number with country code"
-                    pattern="^\+?[0-9]{10,15}$"
-                    title="Enter a valid phone number with country code"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none"
-                    required
-                  />
-                  <button
-                    type="button"
-                    onClick={handleOtpSendClick}
-                    className="bg-white text-primary px-4 py-2 border text-xs rounded-md"
-                    disabled={otpLoading}
-                  >
-                    {otpLoading ? "Sending..." : otpSent ? "Resend OTP" : "Send OTP"}
-                  </button>
-                </div>
-                {otpSent && (
-                  <div className="flex gap-2">
-                    <input
-                      type="text"
-                      name="otp"
-                      placeholder="Enter OTP"
-                      value={otpCode}
-                      onChange={(e) => setOtpCode(e.target.value)}
-                      className="w-full px-4 py-2 border rounded-md focus:outline-none"
-                    />
-                    <button
-                      type="button"
-                      onClick={handleOtpVerifyClick}
-                      className="bg-green-600 text-white px-4 py-2 rounded-md"
-                      disabled={otpVerified || otpLoading}
-                    >
-                      {otpVerified ? "Verified ✅" : "Verify OTP"}
-                    </button>
-                  </div>
-                )}
-                <input
-                  type="text"
-                  name="course"
-                  placeholder="Blog Enquiry"
-                  value={formData.course}
-                  onChange={handleChange}
-                  className="w-full p-2 border rounded focus:outline-none"
-                />
-              </>
-            )}
-
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full p-2 border rounded focus:outline-none"
-              rows="4"
-              required
-            ></textarea>
-
-            <button
-              type="submit"
-              className="bg-primary text-white px-4 py-2 rounded hover:bg-[#092759]"
-              disabled={formSubmitStatus === "loading"}
-            >
-              {formSubmitStatus === "loading" ? "Submitting..." : "Submit"}
-            </button>
-
-            {successMessageShown && (
-              <p className="text-green-600 text-sm mt-2">Form submitted successfully!</p>
-            )}
-            {formSubmitError && (
-              <p className="text-red-600 text-sm mt-2">{formSubmitError}</p>
-            )}
-          </form>
-        </div>
-      )}
+      {showForm && <BlogEnquiryForm blockNavigation />}
     </aside>
   );
 };

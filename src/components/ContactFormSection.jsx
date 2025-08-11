@@ -36,9 +36,9 @@ const ContactFormSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-12 items-start">
           <div className="w-full">
              <h2 className="text-[24px] sm:text-[28px] md:text-[30px] font-semibold mb-4">
-  <span className="text-primary hover:opacity-60 transition">Program Overview</span>{" "}
-  {/* <span className="text-primary hover:opacity-60 transition">Marketing</span>{" "}
-  <span className="text-primary hover:opacity-60 transition">Course</span> */}
+  <span className="text-primary hover:opacity-60 transition">Program </span>{" "}
+   <span className="text-primary hover:opacity-60 transition">Overview</span>{" "}
+  {/* <span className="text-primary hover:opacity-60 transition">Course</span>  */}
   <span className="text-black">/ Training Highlights</span>
 </h2>
             <h4 className="text-lg sm:text-sm font-semibold text-gray-600 mb-4">

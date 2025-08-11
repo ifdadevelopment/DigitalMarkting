@@ -41,7 +41,7 @@ const Home = () => {
       <HeroMain />
       <FeatureSummary />
       <TopCompanies />
-      <CourseTabs to={"/enroll"} label={"Enroll Now"} />
+      <CourseTabs to={"/enroll"} label={"View More"} />
       <MiniCard />
       <FAQSection faqs={accordionItems} />
       <Upskills />

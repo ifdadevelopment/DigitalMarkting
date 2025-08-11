@@ -1,7 +1,10 @@
-
 import { steps1 } from "../../data";
 import { GoTriangleRight, GoTriangleLeft, GoTriangleDown } from "react-icons/go";
+import CourseEnquiryForm from "./CourseEnquiryForm";
+import Modal from "./Modal";
+import { useState } from "react";
 const CourseRoadmap = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -12,10 +15,16 @@ const CourseRoadmap = () => {
           <p className="text-gray-500 mb-6 text-sm font-nunito">
             Your Roadmap to Become a Full-Stack Digital Marketer
           </p>
-          <button className="bg-primary hover:bg-primary text-white px-6 py-2 rounded-md text-md font-semibold w-fit">
+          <button   onClick={() => setIsModalOpen(true)} className="bg-primary hover:bg-primary text-white px-6 py-2 rounded-md text-md font-semibold w-fit">
             Apply Now
           </button>
         </div>
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <h2 className="text-xl font-semibold mb-4 text-center">
+          Book Your Free Demo Class
+        </h2>
+        <CourseEnquiryForm onClose={() => setIsModalOpen(false)} />
+      </Modal>
         <div className="flex flex-col w-full">
           {steps1.map((step, index) => {
             const isEven = index % 2 === 1;
