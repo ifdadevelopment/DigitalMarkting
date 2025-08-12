@@ -94,6 +94,16 @@ const relatedCourses = allCourses
               </ul>
             </section>
           )}
+          {course.topics?.length > 0 && (
+            <section>
+              <h2 className="text-xl font-bold text-primary mb-2">Topics</h2>
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                {course.topics.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {course.requirements?.length > 0 && (
             <section>

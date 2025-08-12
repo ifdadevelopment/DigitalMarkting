@@ -29,7 +29,7 @@ useEffect(() => {
         }
         return `<${item.type}>${item.value}</${item.type}>`;
       })
-      .join("<br/>");
+      .join("");
 
     const transformed = transformHTML(rawHTML); 
     setSelectedBlogContent(transformed);

@@ -38,7 +38,7 @@ import award4 from "/assets/award1.webp";
 // certificate image
 import Cert1 from "/assets/digital-marketing.png";
 import Cert2 from "/assets/internship.png";
-import Cert3 from "/assets/nsdc.png";
+import Cert3 from "/assets/nsdc1.png";
 // import Cert4 from "/assets/certificate3.jpg";
 // import Cert5 from "/assets/certificate3.jpg";
 //company logo

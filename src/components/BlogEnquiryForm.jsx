@@ -21,7 +21,7 @@ export const BlogEnquiryForm = () => {
     setOtpCode,
   } = useContactForm({
     name: user?.name || "",
-    phone: "",
+    // phone: "",
     course: "",
     email: user?.email || "",
     message: "",
@@ -68,7 +68,7 @@ export const BlogEnquiryForm = () => {
               required
             />
 
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <input
                 type="tel"
                 name="phone"
@@ -110,7 +110,7 @@ export const BlogEnquiryForm = () => {
                   {otpVerified ? "Verified ✅" : "Verify OTP"}
                 </button>
               </div>
-            )}
+            )} */}
           </>
         )}
         <input
